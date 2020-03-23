@@ -27,7 +27,7 @@ const App = () => {
     justifyContent: 'center',
     alignItems: 'center',
     background: '#f0f0f0'
-  }
+  };
 
   return (
     <ThemeProvider theme={customTheme}>

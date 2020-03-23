@@ -98,7 +98,7 @@ const MainPanel = props => {
                   >
                     <SocialIcon url="https://github.com/viitana"/>
                     <Stat ml="16px">
-                      <StatNumber fontSize="md">GitHub</StatNumber>
+                        <StatNumber fontSize="md">GitHub</StatNumber>
                       <StatHelpText>github.com/viitana</StatHelpText>
                     </Stat>
                   </PseudoBox>
@@ -115,6 +115,6 @@ const MainPanel = props => {
       </Tabs>
     </Box>
   );
-}
+};
 
 export default MainPanel;

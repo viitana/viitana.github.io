@@ -1,5 +1,5 @@
 import * as React from "react";
-import UseInput from "./Input"
+import UseInput from "./Input";
 import { getWaveMemoized } from "./util";
 
 const WaveBg = props => {
@@ -13,7 +13,7 @@ const WaveBg = props => {
     height:"100%",
     position:"absolute",
     zIndex: -1,
-  }
+  };
 
   const spanstyle= {
     display: "inline-block",
@@ -22,15 +22,15 @@ const WaveBg = props => {
     fontFamily: "Lucida Console, Monaco, monospace",
     userSelect: "none",
     color: "#d9d9d9"
-  }
+  };
 
-  const [wave, waveReverse, rows] = getWaveMemoized(waveIdx, T, fontSize)
+  const [wave, waveReverse, rows] = getWaveMemoized(waveIdx, T, fontSize);
 
   React.useEffect(() => {
     setTimeout(() => {
       setT(T + 1);
     }, 100);
-  }, [T])
+  }, [T]);
 
   return (
     <div id="bg" style={bgstyle}>
@@ -43,6 +43,6 @@ const WaveBg = props => {
       ))}
     </div>
   );
-}
+};
 
 export default WaveBg;

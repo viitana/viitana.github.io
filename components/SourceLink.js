@@ -8,7 +8,7 @@ const SourceLinkBox = props => {
     left: "50%",
     width: "200px",
     margin: "-50px 0 0 -100px",
-  }
+  };
 
   return (
     <Box
@@ -27,6 +27,6 @@ const SourceLinkBox = props => {
       </Link>
     </Box>
   );
-}
+};
 
 export default SourceLinkBox;

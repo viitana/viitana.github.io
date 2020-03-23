@@ -14,7 +14,7 @@ const UseInput = props => {
 
   const clickHandler = e => {
     setClicks(clicks + 1);
-  }
+  };
 
   React.useEffect(() => {
     window.addEventListener("click", clickHandler);
@@ -26,6 +26,6 @@ const UseInput = props => {
   });
 
   return [scroll, clicks];
-}
+};
 
 export default UseInput;
