@@ -36,7 +36,6 @@ const MainPanel = props => {
       <Image
         src={imgsrc}
         alt="That's me"
-        w="700px"
       />
       <Tabs
         isFitted
@@ -44,7 +43,7 @@ const MainPanel = props => {
         size="lg"
         variant="enclosed"
       >
-        <Box h="360px">
+        <Box h="260">
           <TabPanels>
             <TabPanel>
               <Box
