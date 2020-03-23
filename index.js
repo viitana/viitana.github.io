@@ -21,6 +21,8 @@ import {
 } from "@chakra-ui/core";
 
 import { SocialIcon } from 'react-social-icons';
+import WaveBg from "./components/WaveBg";
+import SourceLinkBox from "./components/SourceLink";
 
 const App = () => {
   const customTheme = {
@@ -136,13 +138,12 @@ const App = () => {
               <Tab>Contact</Tab>
             </TabList>
           </Tabs>
-
         </Box>
+        <WaveBg/>
+        <SourceLinkBox/>
       </div>
     </ThemeProvider>
   );
-
-
 
 };
 
