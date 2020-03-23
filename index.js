@@ -49,7 +49,7 @@ const App = () => {
       <CSSReset />
       <div style={baseDivStyle}>
         <Box
-          w="700px"
+          w="500px"
           borderWidth="px"
           overflow="hidden"
           bg="white"
@@ -73,13 +73,13 @@ const App = () => {
               <TabPanels>
                 <TabPanel>
                   <Box
-                      p="32px"
+                      p="38px"
                       overflow="hidden"
                       overflowWrap="break-word"
                     >
-                      <Text fontSize="3xl" pb="16px">Hello & welcome!</Text>
-                      <Text fontSize="xl" pb="16px">I'm Atte, an eager software developer at day and your average tech enthusiast at night. Currently studying computer science at Aalto University. This is my personal little webpage.</Text>
-                      <Text fontSize="xl">I'm most passionate about software design and development, specifically 3D graphics programming and cloud services.</Text>
+                      <Text fontSize="xl" pb="16px">Hello & welcome!</Text>
+                      <Text fontSize="sm" pb="16px">I'm Atte, an eager software developer at day and your average tech enthusiast at night. Currently studying computer science at Aalto University. This is my personal little webpage.</Text>
+                      <Text fontSize="sm">I'm most passionate about software design and development, specifically 3D graphics programming and cloud services.</Text>
                   </Box>
                 </TabPanel>
                 <TabPanel>
@@ -102,8 +102,8 @@ const App = () => {
                       >
                         <SocialIcon url="https://www.linkedin.com/in/atte-viitanen"/>
                         <Stat ml="16px">
-                          <StatNumber>LinkedIn</StatNumber>
-                          <StatHelpText>linkedin.com/in/atte-viitanen</StatHelpText>
+                          <StatNumber fontSize="md">LinkedIn</StatNumber>
+                          <StatHelpText >linkedin.com/in/atte-viitanen</StatHelpText>
                         </Stat>
                       </PseudoBox>
                       <PseudoBox
@@ -123,7 +123,7 @@ const App = () => {
                       >
                         <SocialIcon url="https://github.com/viitana"/>
                         <Stat ml="16px">
-                          <StatNumber>GitHub</StatNumber>
+                          <StatNumber fontSize="md">GitHub</StatNumber>
                           <StatHelpText>github.com/viitana</StatHelpText>
                         </Stat>
                       </PseudoBox>
