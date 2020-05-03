@@ -22,6 +22,7 @@ import {
 
 const MainPanel = props => {
   const imgsrc = require('../res/profile_banner.png');
+  const [imgLoaded, setImgLoaded] = React.useState(false);
 
   return (
     <Box
@@ -34,8 +35,11 @@ const MainPanel = props => {
       boxShadow="0 6px 10px rgba(1,1,1,.15)"
     >
       <Image
+        w="500px"
+        h="195px"
+        onLoad={() => setImgLoaded(true)}
+        style={{ visibility: imgLoaded ? "visible" : "hidden" }}
         src={imgsrc}
-        alt="That's me"
       />
       <Tabs
         isFitted
@@ -52,7 +56,7 @@ const MainPanel = props => {
                   overflowWrap="break-word"
                 >
                   <Text fontSize="xl" pb="16px">Hello & welcome!</Text>
-                  <Text fontSize="sm" pb="16px">I'm Atte, an eager software developer at day and your average tech enthusiast at night. Currently studying computer science at Aalto University. This is my personal little webpage.</Text>
+                  <Text fontSize="sm" pb="16px">I'm Atte, an eager software developer and technology enthusiast. Currently studying computer science at Aalto University. This is my personal little webpage.</Text>
                   <Text fontSize="sm">I'm most passionate about software design and development, specifically 3D graphics programming and cloud services.</Text>
               </Box>
             </TabPanel>
