@@ -5,7 +5,7 @@ import { getWaveMemoized } from "./util";
 const WaveBg = props => {
   const [T, setT] = React.useState(0);
 
-  const [fontOffset, waveIdx] = UseInput();
+  const fontOffset = UseInput();
   const fontSize = 38 + fontOffset;
 
   const bgstyle = {
@@ -24,7 +24,7 @@ const WaveBg = props => {
     color: "#d9d9d9"
   };
 
-  const [wave, waveReverse, rows] = getWaveMemoized(waveIdx, T, fontSize);
+  const [wave, waveReverse, rows] = getWaveMemoized(T, fontSize);
 
   React.useEffect(() => {
     setTimeout(() => {
